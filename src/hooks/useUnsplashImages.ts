@@ -1,6 +1,5 @@
 /**
  * useUnsplashImages
- * Custom Hook
  * Used to manage the state for fetching images, including loading and error states
  */
 
