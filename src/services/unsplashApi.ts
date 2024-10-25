@@ -1,5 +1,6 @@
 /**
  * Unsplash API Service
+ * Encapsulate the API related logic
  */
 
 import axios from 'axios';
@@ -20,7 +21,6 @@ export const getLatestImages = async (page = 1, perPage = 10) => {
 
     return response.data;
   } catch (error) {
-    // Handle the error at some point...
     console.error('Error fetching images: ', error);
     throw error;
   }
