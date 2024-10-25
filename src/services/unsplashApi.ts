@@ -25,3 +25,13 @@ export const getLatestImages = async (page = 1, perPage = 10) => {
     throw error;
   }
 };
+
+export const getImageById = async (id: string) => {
+  try {
+    const response = await unsplashApi.get(`/photos/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetchign image: ', error);
+    throw error;
+  }
+};
